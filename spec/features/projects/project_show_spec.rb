@@ -32,6 +32,7 @@ RSpec.describe "Project show page", type: :feature do
     jay = Contestant.create(name: "Jay McCarroll", age: 40, hometown: "LA", years_of_experience: 13)
 
     fill_in :add_contestant_id, with: jay.id
+    click_button "Add Contestant To Project"
 
     expect(current_path).to eq("/projects/#{@lit_fit.id}")
     expect(page).to have_content("Number of Contestants: 3")
