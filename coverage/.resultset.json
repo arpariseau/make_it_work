@@ -244,6 +244,7 @@
           null,
           1,
           1,
+          1,
           null
         ]
       },
@@ -259,30 +260,45 @@
           null,
           1,
           1,
-          3,
-          3,
+          4,
+          4,
           null,
-          3,
-          3,
+          4,
+          4,
           null,
-          3,
-          3,
+          4,
+          4,
           null,
-          3,
+          4,
           null,
           null,
           1,
           1,
-          1,
-          1,
-          null,
-          null,
           1,
           1,
           null,
           null,
           1,
           1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
           null,
           null,
           null,
@@ -406,8 +422,10 @@
           2,
           2,
           null,
+          null,
           1,
           1,
+          null,
           null,
           1,
           1,
@@ -425,11 +443,11 @@
           1,
           null,
           1,
-          4,
+          6,
           null,
           null,
           1,
-          4,
+          6,
           null,
           null
         ]
@@ -438,7 +456,7 @@
         "lines": [
           1,
           1,
-          1,
+          2,
           null,
           null
         ]
@@ -453,12 +471,24 @@
         "lines": [
           1,
           1,
-          3,
+          5,
+          null,
+          null
+        ]
+      },
+      "/Users/arpariseau/turing/2module/make_it_work/app/controllers/contestant_projects_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
           null,
           null
         ]
       }
     },
-    "timestamp": 1589559443
+    "timestamp": 1589560935
   }
 }
