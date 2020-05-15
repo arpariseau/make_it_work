@@ -24,9 +24,11 @@ RSpec.describe Project, type: :model do
       ContestantProject.create(contestant_id: jay.id, project_id: @news_chic.id)
       ContestantProject.create(contestant_id: gretchen.id, project_id: @news_chic.id)
     end
+
     it "#contestant_count" do
       expect(@news_chic.contestant_count).to eq(2)
     end
+
     it "#avg_contestant_exp" do
       expect(@news_chic.avg_contestant_exp).to eq(12.5)
     end

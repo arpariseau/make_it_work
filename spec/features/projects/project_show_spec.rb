@@ -25,7 +25,21 @@ RSpec.describe "Project show page", type: :feature do
   end
 
   it "shows the average years of experience for the contestants that worked on the project" do
-    expect(page).to have_content("Average Contestant Experience: #{23.0 / 2}")
+    expect(page).to have_content("Average Contestant Experience: #{(8 + 15).to_f / 2}")
+  end
+
+  it "can add a contestant to the project" do
+    jay = Contestant.create(name: "Jay McCarroll", age: 40, hometown: "LA", years_of_experience: 13)
+
+    fill_in :add_contestant_id, with: jay.id
+
+    expect(current_path).to eq("/projects/#{@lit_fit.id}")
+    expect(page).to have_content("Number of Contestants: 3")
+
+    visit "/contestants"
+    within(".contestant-#{jay.id}") do
+      expect(page).to have_content(@lit_fit.name)
+    end
   end
 end
 
