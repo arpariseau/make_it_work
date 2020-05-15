@@ -27,7 +27,7 @@ RSpec.describe "Contestant index page", type: :feature do
 
     within(".contestant-#{jay.id}") do
       expect(page).to have_content(jay.name)
-      expect(page).to have_content(new_chic.name)
+      expect(page).to have_content(news_chic.name)
     end
   end
 end
