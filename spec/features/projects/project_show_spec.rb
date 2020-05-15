@@ -28,16 +28,7 @@ RSpec.describe "Project show page", type: :feature do
     expect(page).to have_content("Average Contestant Experience: #{23.0 / 2}")
   end
 end
-#
-# As a visitor,
-# When I visit a project's show page
-# I see the average years of experience for the contestants that worked on that project
-# (e.g.    Litfit
-#     Material: Lamp Shade
-#   Challenge Theme: Apartment Furnishings
-#   Number of Contestants: 3
-#   Average Contestant Experience: 10.25 years)
-#
+
 # As a visitor,
 # When I visit a project's show page
 # I see a form to add a contestant to this project
